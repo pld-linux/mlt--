@@ -27,6 +27,7 @@ extendible plug-in based API.
 Summary:	Header files for MLT++
 Summary(pl):	Pliki nag³ówkowe dla MLT++
 Group:		Development/Libraries
+Requires:	mlt++
 
 %description devel
 Header files for MLT++
