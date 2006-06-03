@@ -1,12 +1,11 @@
-#
 %define		_snap	20060601
-Summary:	MLT++
-Summary(pl):	MLT++
+Summary:	MLT++ - C++ binding to MLT
+Summary(pl):	MLT++ - wi±zanie C++ do MLT
 Name:		mlt++
 Version:	0.2.2
 Release:	0.%{_snap}.1
 License:	GPL
-Group:		X11/Applications/Multimedia
+Group:		Libraries
 Source0:	%{name}-%{_snap}.tar.gz
 # Source0-md5:	06ad73cbc6f8ce4a076b86fb83cca0eb
 URL:		http://www.dennedy.org/mlt/twiki/bin/view/MLT/WebHome
@@ -18,28 +17,36 @@ MLT is an open source multimedia framework, designed and developed for
 television broadcasting. It provides a toolkit for broadcasters, video
 editors, media players, transcoders, web streamers and many more types
 of applications. The functionality of the system is provided via an
-assortment of ready to use tools, xml authoring components, and an
+assortment of ready to use tools, XML authoring components, and an
 extendible plug-in based API.
 
-#%description -l pl
+%description -l pl
+MLT to szkielet multimedialny o otwartych ¼ród³ach zaprojektowany i
+rozwijany do nadawania telewizji. Udostêpnia zestaw narzêdzi dla
+nadawców, edytory obrazu, odtwarzacze mediów, transkodery, narzêdzia
+do udostêpniania strumieni przez WWW i wiele innych rodzajów
+aplikacji. Funkcjonalno¶æ systemu jest zapewniona poprzez asortyment
+gotowych do u¿ycia narzêdzi, komponentów do tworzenia XML-a i
+rozszerzalne API oparte na wtyczkach.
 
 %package devel
 Summary:	Header files for MLT++
 Summary(pl):	Pliki nag³ówkowe dla MLT++
 Group:		Development/Libraries
-Requires:	mlt++
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
-Header files for MLT++
+Header files for MLT++.
 
-#%description devel -l pl
+%description devel -l pl
+Pliki nag³ówkowe dla MLT++.
 
 %prep
 %setup -q -n %{name}
 
 %build
 %configure
-%{__make}
+%{__make} \
 	CFLAGS="%{rpmcflags}" \
 	LDFLAGS="%{rpmldflags}"
 
