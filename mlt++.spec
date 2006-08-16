@@ -1,4 +1,4 @@
-%define		_snap	20060601
+%define		_snap	20060815
 Summary:	MLT++ - C++ binding to MLT
 Summary(pl):	MLT++ - wi±zanie C++ do MLT
 Name:		mlt++
@@ -7,7 +7,7 @@ Release:	0.%{_snap}.1
 License:	GPL
 Group:		Libraries
 Source0:	%{name}-%{_snap}.tar.gz
-# Source0-md5:	06ad73cbc6f8ce4a076b86fb83cca0eb
+# Source0-md5:	d87399b0787ca88ae03a8939a23503f5
 URL:		http://www.dennedy.org/mlt/twiki/bin/view/MLT/WebHome
 BuildRequires:	mlt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -47,8 +47,8 @@ Pliki nag³ówkowe dla MLT++.
 %build
 %configure
 %{__make} \
-	CFLAGS="%{rpmcflags}" \
-	LDFLAGS="%{rpmldflags}"
+#	CFLAGS="%{rpmcflags}" \
+#	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
