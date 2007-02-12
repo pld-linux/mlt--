@@ -1,6 +1,6 @@
 %define		_snap	20060815
 Summary:	MLT++ - C++ binding to MLT
-Summary(pl.UTF-8):   MLT++ - wiązanie C++ do MLT
+Summary(pl.UTF-8):	MLT++ - wiązanie C++ do MLT
 Name:		mlt++
 Version:	0.2.2
 Release:	0.%{_snap}.1
@@ -31,7 +31,7 @@ rozszerzalne API oparte na wtyczkach.
 
 %package devel
 Summary:	Header files for MLT++
-Summary(pl.UTF-8):   Pliki nagłówkowe dla MLT++
+Summary(pl.UTF-8):	Pliki nagłówkowe dla MLT++
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
