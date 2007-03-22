@@ -3,7 +3,7 @@ Summary:	MLT++ - C++ binding to MLT
 Summary(pl.UTF-8):	MLT++ - wiązanie C++ do MLT
 Name:		mlt++
 Version:	0.2.2
-Release:	0.%{_snap}.1
+Release:	0.%{_snap}.2
 License:	GPL
 Group:		Libraries
 Source0:	%{name}-%{_snap}.tar.gz
