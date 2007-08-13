@@ -1,13 +1,12 @@
-%define		_snap	20060815
 Summary:	MLT++ - C++ binding to MLT
 Summary(pl.UTF-8):	MLT++ - wiązanie C++ do MLT
 Name:		mlt++
 Version:	0.2.2
-Release:	0.%{_snap}.2
+Release:	2
 License:	GPL
 Group:		Libraries
-Source0:	%{name}-%{_snap}.tar.gz
-# Source0-md5:	d87399b0787ca88ae03a8939a23503f5
+Source0:	http://dl.sourceforge.net/sourceforge/mlt/%{name}-%{version}.tar.gz
+# Source0-md5:	7f00c36c54d09d6159641e65955fcad7
 URL:		http://www.dennedy.org/mlt/twiki/bin/view/MLT/WebHome
 BuildRequires:	mlt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -42,7 +41,7 @@ Header files for MLT++.
 Pliki nagłówkowe dla MLT++.
 
 %prep
-%setup -q -n %{name}
+%setup -q 
 
 %build
 %configure
