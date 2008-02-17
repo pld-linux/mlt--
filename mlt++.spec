@@ -2,13 +2,13 @@ Summary:	MLT++ - C++ binding to MLT
 Summary(pl.UTF-8):	MLT++ - wiązanie C++ do MLT
 Name:		mlt++
 Version:	0.2.2
-Release:	2
+Release:	3
 License:	GPL
 Group:		Libraries
 Source0:	http://dl.sourceforge.net/sourceforge/mlt/%{name}-%{version}.tar.gz
 # Source0-md5:	7f00c36c54d09d6159641e65955fcad7
 URL:		http://www.dennedy.org/mlt/twiki/bin/view/MLT/WebHome
-BuildRequires:	mlt-devel
+BuildRequires:	mlt-devel >= 0.2.4-3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
